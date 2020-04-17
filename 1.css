@@ -43,7 +43,7 @@ h2 {font-size: 60px;}
 #container {grid-template-rows: 150px 130px minmax(300px, 1fr) 30px;grid-gap: 7px;}
 }
 
-@media screen and (min-width: 250px) and (max-width: 1080px) and (orientation: landscape)
+@media screen and (min-width: 250px) and (max-width: 2340px) and (orientation: landscape)
 {
 html {font-size:30px;background-size: cover;background-repeat: no-repeat;}
 aside {display:none;}
