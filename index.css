@@ -11,7 +11,7 @@ opacity 0.5;}
 body, nav a, p, li, h1, h2 {text-shadow: 3em 1em 3em orange;}
 li:hover {text-shadow: 3.5vw 1vw 3.5vw blue;}
 
-nav {white-space: nowrap;height: 1fr;}
+nav {white-space: nowrap;}
 nav a {display: inline-block; color: white; text-align: center; padding:1.5vw; text-decoration: none;}
 nav a:hover {background: rgb(0, 0, 0, 0.9);}
 
