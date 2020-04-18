@@ -26,7 +26,7 @@ h2 {font-size: 2.5vw;}
 main {margin: 0;}
 a, p, ul, h1, h2, main, aside, #container {margin: 0.35vw 0.35vw 0.35vw 0.35vw;}
 #container {display: grid;grid-gap: 0.2vw;
-grid-template-rows: 10vw 7vw minmax(30vw, 1fr) 2vw;
+grid-template-rows: 10vw 6.5vw minmax(30vw, 1fr) 20px;
 grid-template-columns: repeat(12,1fr);
 grid-template-areas: "h h h h h h h h h h h h" "n n n n n n n n n n n n" "m m m m m m m m m a a a" "f f f f f f f f f f f f";}
 
@@ -35,7 +35,7 @@ header {grid-area: h;}
 aside {grid-area: a;}
 nav {grid-area: n;}
 main {grid-area: m;}
-footer {grid-area: f;}
+footer {grid-area: f;font-size: 15px;}
 
 @media only screen and (orientation: portrait) and (min-width: 150px) and (max-width: 1024px) {
 html {font-size:3vw;
@@ -50,12 +50,12 @@ h2 {font-size: 5vw;}
 .title {font-size: 4vw;color: black;padding: 2vw;background: rgb(255, 255, 255, 0.5);}
 .nav a {font-size: 5vw;}
 aside {display: none;}
-#container {grid-template-rows: 10vw 10vw minmax(30vw,1fr) 2vw;
+#container {grid-template-rows: 13vw 9vw minmax(30vw,1fr) 20px;
 grid-template-areas: "h h h h h h h h h h h h" "n n n n n n n n n n n n"
 "m m m m m m m m m m m m" "f f f f f f f f f f f f";}}
 
 @media only screen and (orientation: landscape) and (min-width: 480px) and (max-width: 1024px) {
 html {background-size: cover;background-repeat: no-repeat;}
-#container {display: grid;grid-template-rows: 10vw 7vw minmax(30vw, 1fr) 2vw;
+#container {display: grid;grid-template-rows: 10vw 5.5vw minmax(30vw, 1fr) 20px;
 grid-template-areas: "h h h h h h h h h h h h" "n n n n n n n n n n n n"
 "m m m m m m m m a a a a" "f f f f f f f f f f f f";}}
