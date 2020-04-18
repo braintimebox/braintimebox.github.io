@@ -31,7 +31,7 @@ grid-template-rows: 10vw 6.5vw minmax(30vw, 1fr) 20px;
 grid-template-columns: repeat(12,1fr);
 grid-template-areas: "h h h h h h h h h h h h" "n n n n n n n n n n n n" "m m m m m m m m m a a a" "f f f f f f f f f f f f";}
 
-main, aside {background: rgb(0, 0, 0, 0.3);}
+main, aside {background: rgb(0, 0, 0, 0.5);}
 header {grid-area: h;}
 aside {grid-area: a;}
 nav {grid-area: n;}
