@@ -1,30 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital@1&display=swap');
+* {margin: 0;padding: 0;}
+/* Font Styles */
+html {font-family: Comic Sans MS, sans-serif; }
+p {font-size: calc(24px + 1.3 * (100vw - 320px) / 100);text-shadow: 0.2ex 0.2ex 0.5ex orange;color: white;}
+a {font-size: calc(24px + 1.3 * (100vw - 320px) / 100);text-shadow: 0.2ex 0.2ex 0.5ex orange;color: white;text-shadow: 0.2ex 0.2ex 0.5ex orange;color: white;text-shadow: 0.2ex 0.2ex 0.5ex orange;color: white;} 
+ul {font-size: calc(24px + 1.4 * (100vw - 320px) / 100);text-shadow: 0.2ex 0.2ex 0.5ex orange;color: white;text-shadow: 0.2ex 0.2ex 0.5ex orange;color: white;}
+li {font-size: calc(24px + 1.4 * (100vw - 320px) / 100);text-shadow: 0.2ex 0.2ex 0.5ex orange;color: white;}
+h1 {font-size: calc(24px + 2.3 * (100vw - 320px) / 100);text-shadow: 0.2ex 0.2ex 0.5ex orange;color: green;}
+h2 {font-size: calc(24px + 2.1 * (100vw - 320px) / 100);text-shadow: 0.2ex 0.2ex 0.5ex orange;color: blue;}
+.title {font-size: calc(24px + 1.6 * (100vw - 320px) / 100);text-shadow: 0.2ex 0.2ex 0.5ex orange;color: black;padding: 2vw;background: rgb(255, 255, 255, 0.5);}
+.nav a {font-size: calc(24px + 1.8 * (100vw - 320px) / 100);text-shadow: 0.2ex 0.2ex 0.5ex orange;color: black;}
 
-html {font-size: calc(24px + 2.3 * (100vw - 320px) / 100)));}
-font-family: 'Amaranth', sans-serif;}
-p, a, ul, li {font-size: 0.8rem;}
+body, nav a, p, li, h1, h2 {text-shadow: 0.2ex 0.2ex 0.5ex orange;}
+li:hover {text-shadow: 0.2ex 0.2ex 0.5ex blue;zoom:1.2;}
+nav {white-space: nowrap;}
+nav a {display: inline-block; color: white;
+text-align: center;padding: 1vw;text-decoration: none;}
+nav a:hover {background: rgb(0, 0, 0, 0.9);}
+span:hover {color: silver;}
+ul {list-style-type: none;}
+li {display: inline-block;padding: 0.8vw;
+border: black solid 0.1vw;}
+li:hover {color: #000;}
 
-@media only screen and (orientation: portrait) and (min-width: 320px) and (max-width: 767px) {
-#container {display: grid;
-grid-template-areas: "h h h h h h h h h h" "n n n n n n n n n n" "m m m m m m m m m m" "f f f f f f f f f f";}
-aside {display:none;}
-}
+#container {display: grid;grid-gap: 0.2vw;
+grid-template-rows: minmax(5.5vw, 10vw) minmax(5.5vw, 10vw) minmax(30vw, 1fr) minmax(10px, 100px);
+grid-template-columns: repeat(12, 1fr);
+grid-template-areas: "h h h h h h h h h h h h" "n n n n n n n n n n n n"
+"m m m m m m m m m a a a" "f f f f f f f f f f f f";}
 
-#container {
-	display: grid;
-	grid-gap: 0.1vw;
-	background:white;
-	grid-template-rows: : 15vw 5vw minmax(30vw, 1fr) 1vw;
-	grid-template-columns: repeat(10, 1fr);
-	grid-template-areas: "h h h h h h h h h h"
-						 "n n n n n n n n n n"
-                         "m m m m m m m a a a"
-						 "f f f f f f f f f f"
-}
-
-.header {display: none;}
+main, aside, footer, header, nav {background: rgb(0, 0, 0, 0.5);}
 header {grid-area: h;}
+aside {grid-area: a;}
 nav {grid-area: n;}
 main {grid-area: m;}
-aside {display: grid;grid-area:a;}
-footer {grid-area:f;}
+footer {grid-area: f;}
+
+@media (min-width: 100px) and (max-width: 767px) {
+aside {display: none;}
+.title {color: black;padding: 2vw;background: rgb(255, 255, 255, 0.5);}
+#container {
+grid-template-rows: 13vw minmax(9vw, 15vw) minmax(30vw,1fr) minmax(10px, 80px);
+grid-template-areas: "h h h h h h h h h h h h" "n n n n n n n n n n n n"
+"m m m m m m m m m m m m" "f f f f f f f f f f f f";}}
+
+@media only (orientation: landscape) and (min-width: 480px) and (max-width: 1024px) {
+#container {
+display: grid;
+grid-template-rows: 10vw minmax(5.5vw, 10vw) minmax(30vw, 1fr) minmax(10px, 1fr);
+grid-template-areas: "h h h h h h h h h h h h" "n n n n n n n n n n n n"
+"m m m m m m m m a a a a" "f f f f f f f f f f f f";}}
