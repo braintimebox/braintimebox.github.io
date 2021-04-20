@@ -69,7 +69,7 @@ html {width: 768px;}
 
 @media only screen and (min-width: 2300px) and (max-width: 7000px) {
 body {font-size: 1vw;}
-/*.wrapper {display: inline-grid; grid-gap: 0.2vw; grid-template-areas: "m m m m m a";}*/
+.wrapper {display: inline-grid; grid-gap: 0.2vw; grid-template-areas: "m m m m m a";}
 }
 /* Responsive */
 
