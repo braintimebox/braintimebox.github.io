@@ -11,14 +11,14 @@ body, nav a, p, li, h1, h2, .title {padding: 1vmin 1vmin 1vmin 0;}
 
 /* Font Styles */
 html {font-family: Comic Sans MS, sans-serif; color: white;}
-p {font-size: calc(16px + 2.3 * (100vw - 320px) / 100);text-shadow: 0.2ex 0.2ex 0.5ex orange;color: white;}
-a {font-size: calc(16px + 2.3 * (100vw - 320px) / 100);text-shadow: 0.2ex 0.2ex 0.5ex orange;color: white;text-shadow: 0.2ex 0.2ex 0.5ex orange;color: white;text-shadow: 0.2ex 0.2ex 0.5ex orange;color: white;} 
+p {font-size: calc(16px + 0.5 * (100vw - 320px) / 100);text-shadow: 0.2ex 0.2ex 0.5ex orange;color: white;}
+a {font-size: calc(16px + 0.5 * (100vw - 320px) / 100);text-shadow: 0.2ex 0.2ex 0.5ex orange;color: white;text-shadow: 0.2ex 0.2ex 0.5ex orange;color: white;text-shadow: 0.2ex 0.2ex 0.5ex orange;color: white;} 
 ul {font-size: calc(16px + 1 * (100vw - 320px) / 100);text-shadow: 0.2ex 0.2ex 0.5ex orange;color: white;text-shadow: 0.2ex 0.2ex 0.5ex orange;color: white;}
 li {font-size: calc(16px + 1 * (100vw - 320px) / 100);text-shadow: 0.2ex 0.2ex 0.5ex orange;color: white;}
 h1 {font-size: calc(24px + 2.3 * (100vw - 320px) / 100);text-shadow: 0.2ex 0.2ex 0.5ex orange;color: green;padding: 1vmin}
 h2 {font-size: calc(24px + 2 * (100vw - 320px) / 100);text-shadow: 0.2ex 0.2ex 0.5ex orange;color: blue;}
-.title {font-size: calc(16px + 1.5 * (100vw - 320px) / 100);text-shadow: 0.2ex 0.2ex 0.5ex orange;color: black;background: rgb(255, 255, 255, 0.5);}
-.nav a {font-size: calc(16px + 1.5 * (100vw - 320px) / 100);text-shadow: 0.2ex 0.2ex 0.5ex orange;color: black;}
+.title {font-size: calc(16px + 2.3 * (100vw - 320px) / 100);text-shadow: 0.2ex 0.2ex 0.5ex orange;color: black;background: rgb(255, 255, 255, 0.5);}
+.nav a {font-size: calc(16px + 2 * (100vw - 320px) / 100);text-shadow: 0.2ex 0.2ex 0.5ex orange;color: black;}
 body, nav a, p, li, h1, h2 {text-shadow: 0.2ex 0.2ex 0.5ex orange;}
 li:hover {text-shadow: 0.2ex 0.2ex 0.5ex blue;zoom:1.2;}
 nav {white-space: nowrap;}
@@ -57,6 +57,7 @@ grid-template-areas: "h" "n" "w" "f";}
 @media only screen and (orientation: portrait) and (min-width: 100px) and (max-width: 1024px) {
 .wrapper {display: grid; grid-template-areas: "m" "a";}
 .title {color: black; padding: 1vmin; background: rgb(255, 255, 255, 0.5);}
+body {margin: 0;}
 }
 
 @media only (orientation: landscape) and (min-width: 480px) and (max-width: 1024px) {
