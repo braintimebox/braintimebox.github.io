@@ -1,7 +1,7 @@
 /*#################################################*/
 /*##### 	Background						  #####*/
 /*#################################################*/
-html {background: url(image.jpg); background-repeat: no-repeat;background-size: cover;/*position: fixed;*/}
+html {background: url(image.webp); background-repeat: no-repeat; background-size: cover;}
 main, aside {background: rgb(0, 0, 0, 0.3);}
 footer {background: rgb(0, 0, 0, 0.1);}
 .block-name {background: rgb(255, 255, 255, 0.5);}
@@ -28,8 +28,6 @@ html, body, nav a, a, p, li, ul {color:white;}
 h1 {color:green;}
 h2 {color:blue;}
 .block-name, .nav a {color:black;}
-
-background: url(images/hand.png)
 
 /* Font Shadow Effect */
 body, a, p, li, ul, h1, h2, .nav a {text-shadow: 0.2ex 0.2ex 0.5ex orange;}
